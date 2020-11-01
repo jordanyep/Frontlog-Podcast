@@ -8,6 +8,14 @@ body {
     color: #434349;
 }
 
+iframe {
+    margin: 0.5rem 0;
+}
+
+.episodes {
+    margin: 0 -10vw;
+}
+
 .bgimg {
     background-color: #333333;
     height: 30vh;
@@ -165,5 +173,8 @@ nav p {
     }
     .rotate {
         -webkit-transform: rotate(0);
+    }
+    .episodes {
+        margin: 0 0vw;
     }
 }
