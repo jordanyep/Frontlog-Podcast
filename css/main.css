@@ -32,8 +32,8 @@ iframe {
 }
 
 nav {
-    background: #00A08F;
-    color: white;
+    background: #7b8586;
+    color: #434349;
     font-size: 1.25rem;
     position: fixed;
     /* left: 3rem; */
@@ -47,7 +47,9 @@ nav {
     bottom: 100%;
     -webkit-transform: rotateZ(90deg);
     transform-origin: 0 100%;
-    background: #00A08F;
+    background: #7EDDEB;
+    color: #434349;
+    ;
     white-space: nowrap;
 }
 
@@ -78,6 +80,7 @@ ul li {
 
 ul li a {
     color: white;
+    color: #434349;
     text-decoration: none;
 }
 
@@ -156,8 +159,6 @@ nav p {
         right: 10%;
     }
     nav {
-        background: #00A08F;
-        color: white;
         font-size: 1.25rem;
         position: fixed;
         left: 3rem;
