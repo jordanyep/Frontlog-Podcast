@@ -109,6 +109,10 @@ h3 {
     font-size: 1.875rem;
 }
 
+.past {
+    margin-top: 4rem;
+}
+
 p {
     font-size: 1.5rem;
     line-height: 30px;
