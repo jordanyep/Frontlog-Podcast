@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Frontlog Podcast</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Frontlog Podcast – Design and Product">
+    <meta name="keywords" content="UX,Product Design,Product Management">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" sizes="192x192" href="frontlog-logo.svg">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/panchang.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6X74Y22F3V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6X74Y22F3V');
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="grid">
+        <div>
+            &nbsp;
+        </div>
+
+        <div>
+
+            <!--NAV-->
+            <nav class="outer">
+                <div class="inner">
+                    <ul class="rotate">
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#episodes">episodes</a></li>
+                        <li><a href="#about">about</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--CONTENT-->
+            <div class="hero" id="home">
+
+                <div class="flIcon">
+                    <img src="frontlog.svg" />
+                </div>
+                <h1 id="expand">Frontlog</h1>
+                <h1 id="expand2" class="mainL">Frontlog</h1>
+                <!-- <h1 id="expand">Frontlog</h1> -->
+                <!-- <span>hosted by jordan and mike</span> -->
+
+            </div>
+        </div>
+        <div>
+            &nbsp;
+        </div>
+    </div>
+
+    <div class="grid2">
+
+        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200" class="bgexpand">
+
+            <div class="content">
+                <h2 class="">we are Frontlog – a podcast about the intersection of product design and product management.</h2>
+
+
+                <h3 id="episodes">latest episode: </h3>
+                <div class="episodes">
+                    <iframe src="https://open.spotify.com/embed-podcast/show/5zvUFUkaFPxrzAbvRSvvbg" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+
+                <h3 class="past">past episodes:</h3>
+                <div class="episodes">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/3fysjPYI5jWYoM8L9eVz39" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/7BCjDrl20pc5uFDYCj7toI" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/6Raff3AxWqsXfFGKQiTWm9" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/1spBjHSPKLDLVyuUKfOzFh" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+
+                <h3 id="about">who we are:</h3>
+                <p><strong>Jordan</strong> is a product designer, with a background designing products for the public sector and enterprise.</p>
+
+                <p><strong>Mike</strong> is a product manager, with experience in data analytics and fintech.</p>
+
+                <p>Having both met at SAP, Jordan and Mike both share a passion for good design, coffee, Strava, and how to make products better.</p>
+
+                <h3 class="contact">Hey us at <a href="mailto:hey@frontlogpodcast.com">hey@frontlogpodcast.com</a></h3>
+            </div>
+
+        </div>
+
+        <footer class="grid">
+            <div>
+                &nbsp;
+            </div>
+            <div>
+                <p>©2021 – Frontlog Podcast</p>
+            </div>
+            <div>
+                &nbsp;
+            </div>
+        </footer>
+
+
+
+
+        <script src="smooth-scroll.polyfills.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <!-- INCREASE SIZE -->
+        <script>
+            $(function() {
+
+                $(window).scroll(function() {
+
+                    // var mass = Math.max(20, 70 - 0.1 * $(this).scrollTop()) + 'px';
+                    var mass = Math.max(20, 48 + 0.25 * $(this).scrollTop()) + 'px';
+
+                    $('#expand').css({
+                        'font-size': mass,
+                        'line-height': mass
+                    });
+                    $('#expand2').css({
+                        'font-size': mass,
+                        'line-height': mass
+                    });
+                    $('#flIcon').css({
+                        'font-size': mass,
+                        'line-height': mass
+                    });
+                });
+            });
+        </script>
+
+        <!-- INCREASE LINE WIDTH-->
+        <script>
+            $(function() {
+                $(window).scroll(function() {
+                    var scrolled = -($(window).scrollTop()) / 50;
+
+
+                    $('#scrolled').text('scrolled: ' + scrolled + 'px');
+                    if (scrolled) {
+                        $('#expand').css({
+                            'letter-spacing': 2 - scrolled * 15 + 'px'
+                                // 'opacity': 100 + scrolled * 15
+                        });
+                        $('#expand2').css({
+                            'letter-spacing': 2 - scrolled * 15 + 'px'
+                                // 'opacity': 100 + scrolled * 15
+                        });
+                        $('#flIcon').css({
+                            'letter-spacing': 2 - scrolled * 15 + 'px'
+                                // 'opacity': 100 + scrolled * 15
+                        });
+                    } else {
+                        // $('#cName').css({
+                        //     'color': 'red'
+                        // });
+                    }
+                });
+
+            });
+        </script>
+
+        <!-- OPACITY -->
+        <script>
+            $(window).scroll(function() {
+                var scrollTop = $(this).scrollTop();
+
+                $('#expand').css({
+                    opacity: function() {
+                        var elementHeight = $(this).height();
+                        return 1 + (elementHeight - scrollTop) / elementHeight;
+                    }
+                });
+                $('#flIcon').css({
+                    opacity: function() {
+                        var elementHeight = $(this).height();
+                        return 1 + (elementHeight - scrollTop) / elementHeight;
+                    }
+                });
+
+            });
+        </script>
+
+
+        <!-- <script>
+            $(function () {
+                $(window).scroll(function () {
+                    var scrolled=-($(window).scrollTop())/50;
+
+
+                    $('#scrolled').text('scrolled: ' + scrolled + 'px');
+                    if (scrolled < 0) {
+                        $('#expand').css({
+                            'letter-spacing': 12 - scrolled * 5 + 'px'
+                        });
+                    } else {
+                        // $('#cName').css({
+                        //     'color': 'red'
+                        // });
+                    }
+                });
+
+            });
+        </script> -->
+
+
+</body>
+
+</html>
