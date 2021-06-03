@@ -15,6 +15,11 @@ p {
     line-height: 30px;
 }
 
+footer p {
+    font-size: 1rem;
+    margin-bottom: 5vh;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 5fr 8fr 5fr;
@@ -32,7 +37,7 @@ p {
 }
 
 .grid2 .content {
-    padding: 5vh 25vw 25vh 25vw;
+    padding: 5vh 25vw 10vh 25vw;
     z-index: 600;
 }
 
@@ -225,4 +230,47 @@ background: black; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media all and (max-width: 37.5em) {
+    .grid {
+        grid-template-columns: 2fr 14fr 2fr;
+    }
+    .grid2 .content {
+        padding: 5vh 5vw 10vh 5vw;
+        z-index: 600;
+    }
+    h1 {
+        font-size: 1rem;
+        margin-top: 8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .bgimg img {
+        position: absolute;
+        right: 10%;
+    }
+    nav {
+        font-size: 1.25rem;
+        position: fixed;
+        left: 3rem;
+        /* top: 25vh; */
+        font-weight: 600;
+        display: none;
+    }
+    .inner {
+        position: absolute;
+        bottom: 100%;
+        -webkit-transform: rotateZ(0);
+        transform-origin: 0 100%;
+        background: #00A08F;
+        white-space: nowrap;
+    }
+    .rotate {
+        -webkit-transform: rotate(0);
+    }
+    .episodes {
+        margin: 0 0vw;
+    }
 }
