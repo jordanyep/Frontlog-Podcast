@@ -1,11 +1,45 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
+    font-family: 'Panchang-Regular', sans-serif;
+    background: #353232;
+    color: white;
+}
+
+p {
     font-family: 'Jost', sans-serif;
-    background: #F5F9FF;
-    color: #434349;
+    font-size: 1.25rem;
+    line-height: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 5fr 8fr 5fr;
+    z-index: 100;
+}
+
+.grid h1 {
+    z-index: -5;
+}
+
+.grid2 {
+    /* background: black; */
+    background: #353232;
+    z-index: 600;
+}
+
+.grid2 .content {
+    padding: 5vh 25vw 25vh 25vw;
+    z-index: 600;
+}
+
+.bgexpand {
+    /* height: 100%; */
+    /* max-height: 400px; */
+    z-index: 600;
 }
 
 iframe {
@@ -34,12 +68,13 @@ iframe {
 nav {
     background: #7b8586;
     color: #434349;
-    font-size: 1.25rem;
+    font-size: 1em;
     position: fixed;
     /* left: 3rem; */
     left: 0;
     top: 25vh;
     font-weight: 600;
+    z-index: 800;
 }
 
 .inner {
@@ -68,7 +103,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    padding: 1.5rem;
+    padding: 1rem;
     /* margin-bottom: 3rem; */
 }
 
@@ -85,103 +120,109 @@ ul li a {
 }
 
 h1 {
-    margin-top: 4.25rem;
-    margin-bottom: 0;
-    font-size: 6.25rem;
+    font-family: 'Panchang-Extrabold';
+    letter-spacing: 0.1em;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-h2 strong {
-    color: #698AFF !important;
-}
 
-span {
-    font-size: 14px;
-}
+/* #expand {
+    position: fixed;
+} */
 
 h2 {
-    margin-top: 4rem;
-    font-size: 2.5rem;
+    font-family: 'Panchang-Bold';
+    text-align: center;
+    letter-spacing: -0.02em;
+    font-size: 2rem;
+    margin-bottom: 6rem;
 }
 
 h3 {
-    /* margin-top: 4.625rem; */
-    margin-top: 100px;
-    font-size: 1.875rem;
+    font-family: 'Panchang-Bold';
+    text-align: center;
 }
 
-.past {
-    margin-top: 4rem;
+h3 a {
+    color: #7EDDEB;
 }
 
-p {
-    font-size: 1.5rem;
-    line-height: 30px;
+.contact {
+    margin-top: 2rem;
 }
 
-footer {
-    background: #333333;
-    color: white;
-    padding: 4rem 0 1rem 0;
-    margin-top: 4rem;
+p strong {
+    font-family: 'Panchang-Semibold';
 }
 
-footer p {
-    font-size: 16px;
+#blur {
+    font-size: 40px;
+    color: transparent;
+    text-shadow: 0 0 8px #333333;
 }
 
-
-/* nav h1 {
-    font-size: 30px;
+@keyframes blur {
+    0% {
+        text-shadow: 0 0 8px #333333;
+        opacity: 0;
+        filter: blur(15px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
 }
 
-nav p {
-    font-size: 12px;
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    animation: blur 1.5s ease-out;
+    z-index: 1;
+}
+
+.hero h1 {
     margin: 0;
-    margin-top: 0.5rem;
-} */
-
-.intro {
-    font-size: 30px;
-    font-weight: 600;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 6fr 8fr 6fr;
+#expand {
+    /* position: fixed; */
 }
 
-@media all and (max-width: 37.5em) {
-    .grid {
-        grid-template-columns: 2fr 14fr 2fr;
-    }
-    h1 {
-        font-size: 5rem;
-        margin-top: 8rem;
-    }
-    .bgimg img {
-        position: absolute;
-        right: 10%;
-    }
-    nav {
-        font-size: 1.25rem;
-        position: fixed;
-        left: 3rem;
-        /* top: 25vh; */
-        font-weight: 600;
-        display: none;
-    }
-    .inner {
-        position: absolute;
-        bottom: 100%;
-        -webkit-transform: rotateZ(0);
-        transform-origin: 0 100%;
-        background: #00A08F;
-        white-space: nowrap;
-    }
-    .rotate {
-        -webkit-transform: rotate(0);
-    }
-    .episodes {
-        margin: 0 0vw;
-    }
+#expand2 {
+    /* position: fixed; */
+    transform: translateX(140px) !important;
+    transform: translateY(-40px) !important;
+}
+
+.mainL {
+    opacity: 0.1;
+    color: #353232;
+    -webkit-text-stroke: 1px #698AFF;
+}
+
+.hero2 {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    max-height: 400px;
+z-index: 600;
+background: black; */
+}
+
+.parallax {
+    /* The image used */
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
