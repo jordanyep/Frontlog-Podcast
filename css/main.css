@@ -233,8 +233,13 @@ background: black; */
 }
 
 @media all and (max-width: 37.5em) {
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
     .grid {
         grid-template-columns: 2fr 14fr 2fr;
+        overflow-x: hidden;
     }
     .grid2 .content {
         padding: 5vh 5vw 10vh 5vw;
@@ -246,6 +251,11 @@ background: black; */
     }
     h2 {
         font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+        overflow-x: hidden;
+        text-overflow: ellipsis !important;
     }
     .bgimg img {
         position: absolute;
