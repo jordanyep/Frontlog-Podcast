@@ -124,6 +124,14 @@ ul li a {
     text-decoration: none;
 }
 
+
+/* ul li a:hover,
+ul li a:active,
+ul li a:focus {
+    transform: translateX(-100px);
+    transform: translateY(-100px);
+} */
+
 h1 {
     font-family: 'Panchang-Extrabold';
     letter-spacing: 0.1em;
